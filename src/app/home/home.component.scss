@@ -8,9 +8,38 @@
 .header-text {
     position: absolute;
     bottom: 600px;
-    left: 300px;
-    padding: 30px;
+    left: 350px;
+    font-size: 50px;
 }
+
+.header-undertext {
+    color: grey;
+    font-size: 20px;
+    float: left;
+    margin-top: 5px;
+}
+
+.header-undertext-button {
+    color: grey;
+}
+
+.header-text2 {
+    position: absolute;
+    bottom: 350px;
+    right: 350px;
+    left: 1200px;
+}
+
+.header-undertext2 {
+    color: grey;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.header-undertext-button2 {
+    color: grey;
+}
+
 
 .main {
     margin-top: 70px;
