@@ -7,7 +7,7 @@
         <div class="header-text">
             <div>Hello, it's me JJ.</div>
             <div class="header-undertext">Learn more about me
-                <button class="header-undertext-button" mat-icon-button color="primary">
+                <button routerLinkActive="active" [routerLink]="['/me']" class="header-undertext-button" mat-icon-button color="primary">
                     <mat-icon>trending_flat</mat-icon>
                 </button>
             </div>
@@ -19,7 +19,7 @@
                 neque modi!
             </div>
             <div class="header-undertext2">More about my Work
-                <button class="header-undertext-button2" mat-icon-button color="primary">
+                <button routerLinkActive="active" [routerLink]="['/work']" class="header-undertext-button2" mat-icon-button color="primary">
                     <mat-icon>trending_flat</mat-icon>
                 </button>
             </div>
