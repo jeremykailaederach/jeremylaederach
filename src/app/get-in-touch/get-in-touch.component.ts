@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-get-in-touch',
@@ -9,6 +10,7 @@ export class GetInTouchComponent implements OnInit {
   desktop: boolean = true;
   phone: boolean = false;
   public innerWidth: any;
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   constructor() { }
   @HostListener('window:resize', ['$event'])

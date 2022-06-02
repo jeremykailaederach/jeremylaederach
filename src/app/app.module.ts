@@ -12,6 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -43,6 +44,7 @@ import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
     MatButtonModule,
     MatDividerModule,
     MatGridListModule,
+    MatInputModule,
 
     RouterModule.forChild([
       { path: '', component: HomeComponent },
