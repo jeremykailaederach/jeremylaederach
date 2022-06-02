@@ -43,8 +43,7 @@ body {
     background-color: rgb(10, 10, 10);
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Weissenhof-Grotesk,"Helvetica Neue",Helvetica,Arial,sans-serif; }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Weissenhof-Grotesk,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+main {
+  text-align: center;
+  position: relative;
+}
