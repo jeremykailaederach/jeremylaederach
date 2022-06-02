@@ -17,6 +17,9 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { WorkComponent } from './work/work.component';
+import { MeComponent } from './me/me.component';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
+    WorkComponent,
+    MeComponent,
+    GetInTouchComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +46,9 @@ import { HomeComponent } from './home/home.component';
 
     RouterModule.forChild([
       { path: '', component: HomeComponent },
+      { path: 'work', component: WorkComponent },
+      { path: 'me', component: MeComponent },
+      { path: 'getInTouch', component: GetInTouchComponent },
     ]),
   ],
   providers: [],
