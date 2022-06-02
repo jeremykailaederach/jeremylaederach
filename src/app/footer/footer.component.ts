@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,30 +6,21 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  sidenav: boolean = false;
-  nav: boolean = true;
-  navbarfixed: boolean = false;
+  footerText: string = "";
 
   constructor() { }
-  @HostListener('window:scroll', ['$event']) onScroll(){
-    if (window.scrollY > 50){
-      this.navbarfixed = true;
-    }
-    else {
-      this.navbarfixed = false;
-    }
-  }
 
   ngOnInit(): void {
+    var time = new Date().getHours();
+    if (time < 11){
+      this.footerText = "Good morning";
+    }
+    else if (time < 15){
+      this.footerText = "Good afternoon";
+    }
+    else if (time < 24){
+      this.footerText = "Good evening";
+    }
   }
 
-  showSidenav() {
-    this.sidenav = true;
-    this.nav = false;
-  }
-
-  hideSidenav() {
-    this.sidenav = false;
-    this.nav = true;
-  }
 }

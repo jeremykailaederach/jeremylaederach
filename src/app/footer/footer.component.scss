@@ -1,44 +1,16 @@
-.mat-toolbar {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgb(255, 255, 255);
-    height: 120px;
+footer {
+    // position: fixed;
+    bottom: 0px;
+    background-color: #333;
+    width: 100%;
+    height: 75px;
 }
 
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-.navlogo {
-    margin-right: 300px;
-}
-
-.navlinks {
-    margin-right: 300px;
+div {
+    text-align: center;
+    color: #04aa6d;
 }
 
 a {
-    font-size: 17px;
-}
-
-.fixed {
-    position: fixed;
-    width: 100%;
-    transition: 0.2s linear;
-    bottom: 0px;
-    height: 80px;
-}
-
-.nofixed {
-    position: static;
-    transition: 0.2s linear;
-    bottom: -50px;
-}
-
-.mat-sidenav {
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    z-index: 2000;
-    width: 100%;
-    height: 1000px;
-    transition: all 1s;
+    text-decoration: none;
 }
