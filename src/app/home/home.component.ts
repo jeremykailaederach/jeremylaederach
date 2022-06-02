@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  desktop: boolean = true;
+  phone: boolean = false;
+  public innerWidth: any;
 
   constructor() { }
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth < 1000) {
+      this.hidedesktop();
+    }
+    if (this.innerWidth > 1000) {
+      this.showdesktop();
+    }
+  }
+
+  showdesktop() {
+    this.desktop = true;
+    this.phone = false;
+  }
+
+  hidedesktop() {
+    this.desktop = false;
+    this.phone = true;
   }
 
 }

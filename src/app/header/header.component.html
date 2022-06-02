@@ -1,5 +1,5 @@
 <div>
-    <div  *ngIf="nav">
+    <div *ngIf="nav">
         <mat-toolbar calss="mat-toolbar" (scroll)="onScroll()" #nav [ngClass]="navbarfixed?'fixed':'nofixed'">
             <div class="navlogo" fxShow="true" fxHide.lt-md="true"></div>
             <span><a (click)="hideSidenav()" routerLinkActive="active" [routerLink]="['/']" mat-button>

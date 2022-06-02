@@ -1,6 +1,6 @@
 .mat-toolbar {
-    background-color: rgb(255, 255, 255, 0.95);
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
     height: 120px;
 }
 
@@ -35,7 +35,7 @@ a {
 }
 
 .mat-sidenav {
-    background-color: rgb(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     z-index: 2000;
     width: 100%;

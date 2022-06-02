@@ -1,0 +1,80 @@
+// Desktop Screen:
+.header {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.header-text {
+    position: absolute;
+    bottom: 600px;
+    left: 300px;
+    padding: 30px;
+}
+
+.main {
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.main-text {
+    font-size: 30px;
+}
+
+.main-images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    transition: transform 0.2s;
+}
+
+.main-image:hover {
+    transform: scale(1.2);
+}
+
+mat-grid-tile {
+    border-radius: 30px;
+}
+
+// Phone Screen:
+.header-phone {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.header-text-phone {
+    position: absolute;
+    bottom: 50px;
+    border-radius: 30px;
+}
+
+.main-phone {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main-text-phone {
+    font-size: 20px;
+}
+
+.main-images-phone {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-image-phone {
+    transition: transform 0.2s;
+}
+
+.main-image-phone:hover {
+    transform: scale(1.2);
+}
+
+mat-grid-tile {
+    border-radius: 30px;
+}
