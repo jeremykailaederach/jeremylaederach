@@ -1,1 +1,35 @@
-<p>header works!</p>
+<div>
+    <div  *ngIf="nav">
+        <mat-toolbar calss="mat-toolbar" (scroll)="onScroll()" #nav [ngClass]="navbarfixed?'fixed':'nofixed'">
+            <div class="navlogo" fxShow="true" fxHide.lt-md="true"></div>
+            <span><a (click)="hideSidenav()" routerLinkActive="active" [routerLink]="['/']" mat-button>
+                <!-- <img src="../../assets/images/Logo-Scherer-Gartengestaltung.png" alt="logo" height="70px"> -->
+            </a></span>
+    
+            <span class="example-spacer"></span>
+    
+            <div class="navlinks" fxShow="true" fxHide.lt-md="true">
+                <a routerLinkActive="active" [routerLink]="['/']" mat-button>Startseite</a>
+            </div>
+    
+            <div fxShow="true" fxHide.gt-sm="true">
+                <button (click)="showSidenav()" mat-button>
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+        </mat-toolbar>
+    </div>
+
+
+    <div *ngIf="sidenav">
+        <mat-sidenav-container fxFlexFill class="example-container" hidde>
+            <mat-sidenav class="mat-sidenav" #sidenav fxLayout="column">
+                <div fxLayout="column">
+                    <button (click)="hideSidenav()" mat-button><mat-icon>close</mat-icon></button>
+                    <a (click)="hideSidenav()" routerLinkActive="active" [routerLink]="['/']" mat-button>Startseite</a>
+                </div>
+            </mat-sidenav>
+        </mat-sidenav-container>
+    </div>
+
+</div>

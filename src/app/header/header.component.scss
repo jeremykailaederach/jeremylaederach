@@ -1,0 +1,44 @@
+.mat-toolbar {
+    background-color: rgb(255, 255, 255, 0.95);
+    color: rgb(0, 0, 0);
+    height: 120px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.navlogo {
+    margin-right: 300px;
+}
+
+.navlinks {
+    margin-right: 300px;
+}
+
+a {
+    font-size: 17px;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0px;
+    height: 80px;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+}
+
+.mat-sidenav {
+    background-color: rgb(255, 255, 255, 0.95);
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    height: 1000px;
+    transition: all 1s;
+}
