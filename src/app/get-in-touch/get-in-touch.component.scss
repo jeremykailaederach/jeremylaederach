@@ -5,8 +5,35 @@
     color: rgb(255, 255, 255);
 }
 
-.header-text {
+.header-content {
     position: absolute;
-    bottom: 600px;
-    left: 350px;
+    bottom: 500px;
+    left: 50%;
+    right: 50%;
+    font-size: 16px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: rgb(255, 255, 255);
+    }
+    .mat-form-field-label {
+        color: rgb(255, 255, 255);
+    }
+    .mat-form-field-underline {
+        background-color: rgba(0, 0, 0, 0.501);
+    }
+    .mat-form-field-ripple {
+        background-color: rgb(255, 255, 255);
+    }
+    .mat-form-field-required-marker {
+        color: rgb(255, 255, 255);
+    }
 }

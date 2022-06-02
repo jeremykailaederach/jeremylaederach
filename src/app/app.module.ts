@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule, } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -36,6 +37,9 @@ import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+
+    FormsModule,
+    ReactiveFormsModule,
 
     FlexLayoutModule,
     MatToolbarModule,

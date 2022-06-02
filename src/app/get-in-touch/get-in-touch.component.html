@@ -4,11 +4,32 @@
         <div class="header-image">
             <img src="../../assets/images/blue.jpg" alt="background picture" height="1100px" width="100%">
         </div>
-        <div class="header-text">
-            <mat-form-field class="input">
-                <mat-label>Name</mat-label>
-                <input matInput placeholder="Name" autocomplete="off" type="text">
-              </mat-form-field>
+        <div class="header-content">
+                <mat-form-field class="input">
+                    <mat-label>First Name *</mat-label>
+                    <input matInput placeholder="" autocomplete="off" type="text">
+                </mat-form-field>
+
+                <mat-form-field class="input">
+                    <mat-label>Last Name *</mat-label>
+                    <input matInput placeholder="" autocomplete="off" type="text">
+                </mat-form-field>
+
+                <mat-form-field class="input" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [formControl]="emailFormControl" placeholder="">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="input" appearance="fill">
+                    <mat-label>Message *</mat-label>
+                    <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
         </div>
     </div>
 </div>

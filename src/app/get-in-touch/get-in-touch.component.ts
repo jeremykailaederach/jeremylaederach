@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-get-in-touch',
