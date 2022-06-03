@@ -3,14 +3,18 @@
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
 }
-
 
 .content-form {
     position: absolute;
     left: 350px;
-    top: 185px;
-    
+    top: 205px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +34,7 @@
 
 .content-socials {
     position: absolute;
-    top: 228px;
+    top: 248px;
     right: 350px;
 }
 
@@ -44,6 +48,51 @@
     font-size: large;
     font-weight: 100;
     margin: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 ::ng-deep .mat-form-field {

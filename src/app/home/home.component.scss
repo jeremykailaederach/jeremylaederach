@@ -3,6 +3,12 @@
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
 }
 
 .header-text {
@@ -17,6 +23,7 @@
     font-size: 20px;
     float: left;
     margin-top: 5px;
+    font-weight: 100;
 }
 
 .header-undertext-button {
@@ -28,6 +35,12 @@
     top: 550px;
     right: 350px;
     left: 900px;
+    font-weight: 100;
+}
+
+.header-text2-title {
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .header-undertext2 {
@@ -80,4 +93,49 @@
 
 .header-undertext-button2-phone {
     color: grey;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

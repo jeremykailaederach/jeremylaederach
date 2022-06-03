@@ -2,24 +2,27 @@
 <div *ngIf="desktop">
     <div class="header">
         <div class="header-image">
-            <img src="../../assets/images/red_blue.jpg" alt="background picture" height="1100px" width="100%">
+            <img draggable="false" (dragstart)="false;" src="../../assets/images/red_blue.jpg" alt="background picture" height="1100px" width="100%">
         </div>
         <div class="header-text">
             <div>Hello, it's me JJ.</div>
-            <div class="header-undertext">Learn more about me
-                <button routerLinkActive="active" [routerLink]="['/me']" class="header-undertext-button" mat-icon-button color="primary">
+            <div class="header-undertext">Learn about my work
+                <button routerLinkActive="active" [routerLink]="['/work']" class="header-undertext-button"
+                    mat-icon-button color="primary">
                     <mat-icon>trending_flat</mat-icon>
                 </button>
             </div>
         </div>
         <div class="header-text2">
-            <h3>My Work</h3>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ad et? Quaerat, cumque. Repellat atque
-                eius adipisci repudiandae expedita numquam enim, doloremque deleniti odit quaerat eveniet eos, veritatis
-                neque modi!
+            <div class="header-text2-title">About me</div>
+            <div>
+                I'm a young enthusiastic software developer. I am currently doing an apprenticeship as a computer
+                scientist specializing in application development. I love working as a software developer because every
+                job is unique.
             </div>
-            <div class="header-undertext2">More about my Work
-                <button routerLinkActive="active" [routerLink]="['/work']" class="header-undertext-button2" mat-icon-button color="primary">
+            <div class="header-undertext2">Learn more about me
+                <button routerLinkActive="active" [routerLink]="['/me']" class="header-undertext-button2"
+                    mat-icon-button color="primary">
                     <mat-icon>trending_flat</mat-icon>
                 </button>
             </div>
