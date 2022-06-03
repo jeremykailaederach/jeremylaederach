@@ -1,23 +1,49 @@
 // Desktop Screen:
-.header {
+.content2 {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
 }
 
-.header-content {
-    position: absolute;
-    bottom: 500px;
-    left: 50%;
-    right: 50%;
-    font-size: 16px;
-}
 
-.input {
+.content-form {
+    position: absolute;
+    left: 350px;
+    top: 185px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+}
+
+.content-form-text {
+    margin-bottom: 50px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.content-form-Button {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content-socials {
+    position: absolute;
+    top: 228px;
+    right: 350px;
+}
+
+.content-socials-text {
+    margin-bottom: 50px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.content-socials-title {
+    font-size: large;
+    font-weight: 100;
+    margin: 30px;
 }
 
 ::ng-deep .mat-form-field {
