@@ -1,7 +1,6 @@
 // Desktop Screen:
-.header {
+.content2 {
     position: relative;
-    text-align: center;
     color: rgb(255, 255, 255);
     animation: fadeIn linear 1.5s;
     -webkit-animation: fadeIn linear 1.5s;
@@ -36,4 +35,49 @@
 
 .content-button {
     color: grey;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
