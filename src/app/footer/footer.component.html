@@ -1,7 +1,23 @@
-<footer>
-    <a>
-        <div layout="row" layout-align="center center" flex>
-            {{footerText}}
+<div>
+    <mat-toolbar calss="mat-toolbar" (scroll)="onScroll()" #nav [ngClass]="navbarfixed?'fixed':'nofixed'">
+        <div class="text">
+            © 2022 Jeremy Laederach. All rights reserved.
         </div>
-    </a>
-</footer>
+        <div class="icons">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/jeremylaederach/"><img src="../../assets/images-icons/instagram.png" alt="instagram" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/jeremylaederach/"><img src="../../assets/images-icons/facebook.png" alt="facebook" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/JeremyLaderach"><img src="../../assets/images-icons/twitter.png" alt="twitter" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jeremy-l%C3%A4derach-235085241/"><img src="../../assets/images-icons/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar>
+</div>
