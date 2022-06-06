@@ -20,10 +20,10 @@ export class GetInTouchComponent implements OnInit {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 1000) {
+    if (this.innerWidth < 1800) {
       this.hidedesktop();
     }
-    if (this.innerWidth > 1000) {
+    if (this.innerWidth > 1800) {
       this.showdesktop();
     }
   }

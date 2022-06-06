@@ -63,6 +63,73 @@ a {
     pointer-events: none;
 }
 
+// Phone Screen:
+.content2-phone {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
+}
+
+.content-form-phone {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.content-form-text-phone {
+    margin-bottom: 50px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.content-form-Button-phone {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content-socials-phone {
+    position: absolute;
+    top: 660px;
+    right: 10px;
+    left: 10px;
+}
+
+.content-socials-text-phone {
+    margin-bottom: 50px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.content-socials-title-phone {
+    font-size: large;
+    font-weight: 100;
+    margin: 30px;
+}
+
+a {
+    font-size: large;
+    font-weight: 100;
+    margin: 30px;
+    color: grey;
+    text-decoration: none;
+}
+
+.email {
+    display: inline-block;
+    pointer-events: none;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

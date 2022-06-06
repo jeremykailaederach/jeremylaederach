@@ -40,23 +40,7 @@
                 <button mat-raised-button class="content-form-Button">Send Message</button>
 
             </div>
-
-            <li>
-                <a href="https://www.instagram.com/jeremylaederach/"><img src="../../assets/images-icons/instagram.png"
-                        alt="instagram" height="30px" width="30px"></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/jeremylaederach/"><img src="../../assets/images-icons/facebook.png"
-                        alt="facebook" height="30px" width="30px"></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/JeremyLaderach"><img src="../../assets/images-icons/twitter.png"
-                        alt="twitter" height="30px" width="30px"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/jeremy-l%C3%A4derach-235085241/"><img
-                        src="../../assets/images-icons/linkedin.png" alt="linkedin" height="30px" width="30px"></a>
-            </li>
+            
             <div class="content-socials">
                 <div class="content-socials-text">Or if you prefer, feel free to message me on my socials</div>
                 <div class="content-socials-title">Instagram: 
@@ -96,4 +80,80 @@
 
 <!-- Phone Screen: -->
 <div *ngIf="phone">
+    <div class="content2-phone">
+        <div class="content-image-phone">
+            <img draggable="false" (dragstart)="false;" src="../../assets/images/blue.jpg" alt="background picture"
+                height="1100px" width="100%">
+        </div>
+        <div class="content-phone">
+
+            <div class="content-form-phone">
+
+                <div class="content-form-text-phone">If you want to get in touch with me, you can simply write to me via the
+                    website</div>
+                <mat-form-field class="content-form-input-phone">
+                    <mat-label>First Name *</mat-label>
+                    <input matInput placeholder="" autocomplete="off" type="text">
+                </mat-form-field>
+
+                <mat-form-field class="content-form-input-phone">
+                    <mat-label>Last Name *</mat-label>
+                    <input matInput placeholder="" autocomplete="off" type="text">
+                </mat-form-field>
+
+                <mat-form-field class="content-form-input-phone" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [formControl]="emailFormControl" placeholder="">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="content-form-input-phone" appearance="fill">
+                    <mat-label>Message *</mat-label>
+                    <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
+
+                <button mat-raised-button class="content-form-Button-phone">Send Message</button>
+
+            </div>
+
+            <div class="content-socials-phone">
+                <div class="content-socials-text-phone">Or if you prefer, feel free to message me on my socials</div>
+                <div class="content-socials-title-phone">Instagram: 
+                    <a href="https://www.instagram.com/jeremylaederach/">
+                        jeremylaederach
+                    </a>
+                </div>
+
+                <div class="content-socials-title-phone">Facebook: 
+                    <a href="https://www.facebook.com/jeremy.laederach/">
+                        Jeremy Laederach
+                    </a>
+                </div>
+
+                <div class="content-socials-title-phone">Twitter: 
+                    <a href="https://twitter.com/JeremyLaderach">
+                        Jeremy Läderach
+                    </a>
+                </div>
+
+                <div class="content-socials-title-phone">LinkedIn: 
+                    <a href="https://www.linkedin.com/in/jeremy-l%C3%A4derach-235085241/">
+                        Jeremy Läderach
+                    </a>
+                </div>
+
+                <div class="content-socials-title-phone">Email: 
+                    <a href="" class="email">
+                        info@jeremylaederach.ch
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
