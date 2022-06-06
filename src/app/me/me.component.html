@@ -10,7 +10,7 @@
                 Jeremy Laederach - Software Developer
             </div>
             <div class="content-text">
-                Hey, I'm Jeremy, but most people call me JJ. I'm a young enthusiastic software developer. I am
+                Hey, my name Jeremy, but most people call me JJ. I'm a young enthusiastic software developer. I am
                 currently doing an apprenticeship as a computer
                 scientist specializing in application development. I love working as a software developer because every
                 assignment is unique. I always take every assignment very seriously. I work very professionally and
@@ -29,4 +29,29 @@
 
 <!-- Phone Screen: -->
 <div *ngIf="phone">
+    <div class="content2-phone">
+        <div class="content-image-phone">
+            <img draggable="false" (dragstart)="false;" src="../../assets/images/red.jpg" alt="background picture"
+                height="900px" width="100%">
+        </div>
+        <div class="content-phone">
+            <div class="content-title-phone">
+                Jeremy Laederach
+            </div>
+            <div class="content-text-phone">
+                Hey, my name Jeremy, but most people call me JJ. I'm a young enthusiastic software developer. I am
+                currently doing an apprenticeship as a computer
+                scientist specializing in application development. I love working as a software developer because every
+                assignment is unique. I always take every assignment very seriously. I work very professionally and
+                efficiently. I'm also uncomplicated and open to ideas and suggestions for improvement. That you are
+                satisfied with the assignment has the highest priority for me.
+                <div class="content-button-text-phone">Get in touch with me
+                    <button routerLinkActive="active" [routerLink]="['/getInTouch']" class="content-button-phone"
+                        mat-icon-button color="primary">
+                        <mat-icon>trending_flat</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
