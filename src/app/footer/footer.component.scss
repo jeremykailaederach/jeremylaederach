@@ -1,3 +1,4 @@
+// Desktop Screen
 .mat-toolbar {
     background-color: rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
@@ -34,6 +35,45 @@ ul {
     display: inline;
     position: absolute;
     right: 350px;
+    bottom: 13px;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+// Phone Screen
+.mat-toolbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    height: 120px;
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    bottom: 0px;
+    height: 120px;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    bottom: -50px;
+}
+
+.icons {
+    font-size: small;
+}
+
+.ul-phone {
+    display: inline;
+    position: absolute;
+    right: 75px;
+    left: 10px;
     bottom: 13px;
 }
 
