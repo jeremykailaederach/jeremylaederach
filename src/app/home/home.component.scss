@@ -1,5 +1,5 @@
 // Desktop Screen:
-.header {
+.content {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -11,14 +11,14 @@
     -ms-animation: fadeIn linear 1.5s;
 }
 
-.header-text {
+.content-text {
     position: absolute;
     bottom: 700px;
     left: 350px;
     font-size: 50px;
 }
 
-.header-undertext {
+.content-undertext {
     color: grey;
     font-size: 20px;
     float: left;
@@ -26,11 +26,11 @@
     font-weight: 100;
 }
 
-.header-undertext-button {
+.content-undertext-button {
     color: grey;
 }
 
-.header-text2 {
+.content-text2 {
     position: absolute;
     top: 550px;
     right: 350px;
@@ -38,60 +38,73 @@
     font-weight: 100;
 }
 
-.header-text2-title {
+.content-text2-title {
     margin-bottom: 20px;
     font-weight: 500;
 }
 
-.header-undertext2 {
+.content-undertext2 {
     color: grey;
     font-size: 15px;
     margin-top: 5px;
 }
 
-.header-undertext-button2 {
+.content-undertext-button2 {
     color: grey;
 }
 
 // Phone Screen:
-.header-phone {
+.content-phone {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
 }
 
-.header-text-phone {
+.content-text-phone {
     position: absolute;
-    bottom: 650px;
-    left: 75px;
-    font-size: 20px;
-}
-
-.header-undertext-phone {
-    color: grey;
-    font-size: 20px;
-    float: left;
-    margin-top: 5px;
-}
-
-.header-undertext-button-phone {
-    color: grey;
-}
-
-.header-text2-phone {
-    position: absolute;
-    bottom: 400px;
+    top: 160px;
+    right: 10px;
     left: 10px;
-    font-size: 15px;
+    font-size: 50px;
 }
 
-.header-undertext2-phone {
+.content-undertext-phone {
+    color: grey;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.content-undertext-button-phone {
+    color: grey;
+}
+
+.content-text2-phone {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    left: 10px;
+    font-weight: 100;
+}
+
+.content-text2-title-phone {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.content-undertext2-phone {
     color: grey;
     font-size: 15px;
     margin-top: 5px;
 }
 
-.header-undertext-button2-phone {
+.content-undertext-button2-phone {
     color: grey;
 }
 

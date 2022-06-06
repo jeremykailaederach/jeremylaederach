@@ -18,10 +18,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 1400) {
+    if (this.innerWidth < 1405) {
       this.hidedesktop();
     }
-    if (this.innerWidth > 1400) {
+    if (this.innerWidth > 1405) {
       this.showdesktop();
     }
   }
