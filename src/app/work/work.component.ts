@@ -18,10 +18,10 @@ export class WorkComponent implements OnInit {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 1000) {
+    if (this.innerWidth < 1700) {
       this.hidedesktop();
     }
-    if (this.innerWidth > 1000) {
+    if (this.innerWidth > 1700) {
       this.showdesktop();
     }
   }
