@@ -3,7 +3,7 @@
         <mat-toolbar calss="mat-toolbar" (scroll)="onScroll()" #nav [ngClass]="navbarfixed?'fixed':'nofixed'">
             <div class="navlogo" fxShow="true" fxHide.lt-md="true"></div>
             <span>
-                <a routerLinkActive="active" [routerLink]="['/']" mat-button>Home.</a>
+                <a [routerLink]="['/']" mat-button>Home.</a>
             </span>
 
             <span class="example-spacer"></span>
