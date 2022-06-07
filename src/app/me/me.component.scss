@@ -37,6 +37,12 @@
     color: grey;
 }
 
+.content-button:hover {
+    background-color: gray;
+    color: black;
+    transition: 0.5s;
+}
+
 // Phone Screen:
 .content2-phone {
     position: relative;

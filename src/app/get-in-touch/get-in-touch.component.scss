@@ -58,6 +58,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    border-bottom: 1px solid;
+    transition: 0.1s;
+}
+
 .email {
     display: inline-block;
     pointer-events: none;

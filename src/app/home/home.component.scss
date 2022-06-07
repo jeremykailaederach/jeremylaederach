@@ -30,6 +30,12 @@
     color: grey;
 }
 
+.content-undertext-button:hover {
+    background-color: gray;
+    color: black;
+    transition: 0.5s;
+}
+
 .content-text2 {
     position: absolute;
     top: 550px;
@@ -51,6 +57,12 @@
 
 .content-undertext-button2 {
     color: grey;
+}
+
+.content-undertext-button2:hover {
+    background-color: gray;
+    color: black;
+    transition: 0.5s;
 }
 
 // Phone Screen:

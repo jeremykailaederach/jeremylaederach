@@ -51,6 +51,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+    border-bottom: 1px solid;
+    transition: 0.1s;
+}
+
 // Phone Screen:
 .content2-phone {
     position: relative;

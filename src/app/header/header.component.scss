@@ -21,12 +21,22 @@ a {
     margin: 20px;
 }
 
+a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
 .fixed {
     position: fixed;
     width: 100%;
     transition: 0.2s linear;
     top: 0px;
     height: 80px;
+}
+
+.fixed {
+    background-color: rgba(0, 0, 0, 0.646);
 }
 
 .nofixed {
@@ -49,7 +59,6 @@ a {
     -o-animation: fadeIn linear 1s;
     -ms-animation: fadeIn linear 1s;
 }
-
 
 @keyframes fadeIn {
     0% {
